@@ -26,7 +26,7 @@
   }
 
   .hero{
-      background: linear-gradient(to bottom, var(--azul-principal), var(--secundario-oscuro));   
+      background: linear-gradient(to bottom, var(--azul-principal-oscuro), var(--negro));   
       overflow-y: hidden;    
   }
 
