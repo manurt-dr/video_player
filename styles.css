@@ -1,0 +1,190 @@
+:root {
+    /* colores */
+    --azul-principal-claro: rgb(128, 255, 234);
+    --azul-principal: #3dccc0;
+    --azul-principal-oscuro: #0c8080;
+    --secundario-claro: rgb(255, 128, 128);
+    --secundario: #cc3d55;
+    --secundario-oscuro: rgb(153, 15, 61);
+    --verde-afirmativo: #4ddb37;
+    --rojo-negativo: #db3737;
+    --negro:rgb(22, 26, 25);
+    --gris:#73807d;
+    --blanco: #f2fffc;
+
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .hero{
+      background: linear-gradient(to bottom, var(--azul-principal), var(--secundario-oscuro));   
+      overflow-y: hidden;    
+  }
+
+  .header__figure--image{
+      height: 10vh;
+      margin: 10px;
+  }
+
+  .main{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 150px);
+      margin-top: 20px;
+  }
+
+  .login__form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .login__form--input, .login__form--submit{
+    outline: none;
+    align-self: center;
+    width: 85%;
+    padding: 10px 0px 2px 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.6rem;
+    transition-timing-function: ease-in;
+    transition: 80ms;
+  }
+  .login__form--submit{
+      height: auto;
+      border-style: none;
+      border-radius: 5px;
+      background-color: rgba(22, 26, 25, 0.1);
+      font-weight: bold;
+      padding: 5px;
+  }
+
+  .login__form--submit:hover, .login__form--submit:focus{
+    background-color: rgba(255, 128, 128, 0.2) ;
+    font-size: 2rem;
+    border: 1px solid  rgba(255, 128, 128, 0.4) ;
+    transform: scale3d(1.01, 1.01, 1);
+    border-radius: 25px;
+    
+    /* padding-left: 15px; */
+  }
+
+  .login__form--submit:hover:focus{
+    background-color: rgba(255, 128, 128, 0.4) ;
+    border: 1px solid rgba(153, 15, 61, 0.2) ;
+
+  }
+
+  .login__form--remember, .login__form--remember a{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .login__form--remember label{
+    display: flex;
+    align-items: center;
+  }
+
+  .login__form--remember label input{
+      margin-right: 5px ;
+  }
+
+  ::placeholder{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+  .login__title{
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+  }
+  
+  .rrss{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .rrss__twitter, .rrss__google{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .rrss__twitter a, .rrss__google a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 5px;
+  }
+
+    input:focus, input:hover{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    font-size: 17px;
+    border: 1px solid  rgba(128, 255, 234, 0.3) ;
+    transform: scale3d(1.01, 1.05, 1);
+    border-radius: 25px;
+    padding-left: 15px;
+}
+    input:hover:focus{
+  background-color: rgba(255, 255, 255, 0.3) ;
+  font-size: 18px;
+  border: 1.5px solid  rgba(128, 255, 234, 0.3) ;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+ .register{
+    align-self: center;
+    margin: auto;
+    margin-bottom: 90px;
+    color: white;
+    font-size: 1.2rem;
+    }
+
+.register a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.register a:hover{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    transition: 80ms;
+}
+
+.footer{
+    height: 50px;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.footer__menu--item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
